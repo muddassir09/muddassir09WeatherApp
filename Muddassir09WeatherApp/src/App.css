@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+  text-align: center;
+}
+
+.form .btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #63a3ec;
+  transition: background-color 0.1s ease;
+}
+
+.btnNight {
+  background:
+    radial-gradient(circle at 50% 120%, #263b73 0%, #0b1026 45%, #02030a 100%);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.1s ease;
+}
+
+.btnNight:active {
+  background-color: #262731;
+  transform: scale(0.99);
+}
+
+.btn:active {
+  background-color: #262731;
+  transform: scale(0.99);
+}
+
+.form input {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #63a3ec;
+}
+
+.hiddenElement{
+  display: none;
+}
+
+.weatherDesc {
+  color: #d5d6d8;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+.weatherIcon {
+  font-size: 5rem;
+}
+
+.errorElement {
+  color: #aa3333;
+  font-size: 16px;
+}
+
+.form {
+  margin-bottom: 5px;
+}
+
+#temp {
+  font-weight: bold;
+}
+
+#weatherType {
+  font-weight: bold;
+}
+
+#weatherIcon {
+  transform: scale(2);
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #63a3ec;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 10vh;
+}
+
+.cardNight {
+  background:
+    radial-gradient(circle at 50% 120%, #263b73 0%, #0b1026 45%, #02030a 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 10vh;
+}
+
+.cardNight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(2px 2px at 10% 20%, white, transparent),
+    radial-gradient(1px 1px at 20% 80%, white, transparent),
+    radial-gradient(2px 2px at 30% 40%, white, transparent),
+    radial-gradient(1px 1px at 40% 70%, white, transparent),
+    radial-gradient(2px 2px at 50% 15%, white, transparent),
+    radial-gradient(1px 1px at 60% 50%, white, transparent),
+    radial-gradient(2px 2px at 70% 25%, white, transparent),
+    radial-gradient(1px 1px at 80% 75%, white, transparent),
+    radial-gradient(2px 2px at 90% 35%, white, transparent),
+    radial-gradient(1px 1px at 15% 60%, white, transparent),
+    radial-gradient(2px 2px at 75% 90%, white, transparent);
+
+  animation: twinkle 3s infinite alternate;
+}
