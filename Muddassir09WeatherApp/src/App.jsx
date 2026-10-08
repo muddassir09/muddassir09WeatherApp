@@ -18,7 +18,7 @@ function App() {
     const cardElement = document.getElementById("card")
     
     {/* Use Geocode Api to convert city name to coordinates */}
-    const geocodeResponse = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${inputCityValue}&limit=1&appid=${apiKey}`)
+    const geocodeResponse = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${inputCityValue}&limit=1&appid=${apiKey}`)
     const geocodeData = await geocodeResponse.json()
 
     if (!geocodeResponse.ok || geocodeData.length === 0) {
